@@ -66,3 +66,109 @@ li:hover{
     background: lightblue;
     margin-right: 10px;
 }
+main{
+    width: 80%;
+    height: 622px;
+    margin: 0 auto;
+    display: flex;
+}
+.training{
+    width: 70%;
+    height: 622px;
+}
+.question{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.container{
+    width: 100%;
+    height: 422px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_image{
+    width: 30%;
+    height: 422px;
+}
+.container_image img{
+    width: 100%;
+    height: 422px;
+}
+#button{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#button1{
+    width: 40%;
+    height: 135px;
+    border: 15px solid lightgreen;
+    background: green;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+#button1:hover{
+    opacity: 0.6;
+}
+#button2{
+    width: 40%;
+    height: 135px;
+    border: 15px solid lightcoral;
+    background: red;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+#button2:hover{
+    opacity: 0.6;
+}
+#button3{
+    width: 40%;
+    height: 135px;
+    border: 15px solid blueviolet;
+    background: darkviolet;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+#button3:hover{
+    opacity: 0.6;
+}
+#button4{
+    width: 40%;
+    height: 135px;
+    border: 15px solid lightblue;
+    background: blue;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+#button4:hover{
+    opacity: 0.6;
+}
+aside{
+    width: 30%;
+    height: 622px;
+    display: flex;
+    justify-content: center;
+}
+.task{
+    width: 90%;
+    height: 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: darkslategray;
+    background: lightblue;
+}
