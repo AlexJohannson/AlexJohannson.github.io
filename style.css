@@ -5,14 +5,13 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("flagOfGermany.jpg");
+    background-image: url("img/flagOfGermany.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 /*------------------------------  div class="wrapper_courses   ---------------------------------------------------*/
 .wrapper_courses{
     width: 100%;
-    height: 130vh;
     display: flex;
     flex-direction: column;
 }
@@ -251,7 +250,7 @@ aside{
     width: 30%;
     height: 500px;
     box-shadow: 0 0 4px 4px #ffcc00;
-    background-image: url("germanyImage.jpg");
+    background-image: url("img/germanyImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
