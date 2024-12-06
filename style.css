@@ -1,125 +1,317 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+*{
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    box-sizing: border-box;
 }
-
-#wrapper {
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+body{
+    background-image: url("img/flagOfGermany.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-/* Стилі для header */
-header {
-    background-color: #ff0000; /* Червоний колір */
-    padding: 20px;
+/*------------------------------  div class="wrapper_courses   ---------------------------------------------------*/
+.wrapper_courses{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+/*---------------------------------------------   header   ------------------------------------------------------*/
+header{
+    width: 80%;
+    height: 100px;
+    margin: 15px auto 0 auto;
+    background: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    box-shadow: 0 0 9px 9px #fff;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
-
-header img {
-    max-width: 80px; /* Зменшуємо розмір логотипу */
+/*------------------------------------------   header img   ----------------------------------------------------*/
+header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid #ffcc00;
+    margin-left: 15px;
 }
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/*--------------------------------------   header nav ul  --------------------------------------------------*/
+nav ul{
+  list-style-type: none;
     display: flex;
+    gap: 30px;
+}
+/*---------------------------------------   header nav ul li   ----------------------------------------------*/
+ul li{
+    color: white;
+    cursor: pointer;
+}
+ul li:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+/*--------------------------------------  div class="registration"  button   ----------------------------------------*/
+.registration button{
+    width: 170px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: #000000;
+    color: #fff;
+    box-shadow: 0 0 4px 4px #fff;
+}
+.registration button:hover{
+    background: #ffcc00;
+    color: #ff0000;
+}
+/*-----------------------------------   select class="language"   -----------------------------------------------*/
+.language{
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px 4px #fff;
+    background: #000000;
+    color: #ffffff;
+}
+.language option:nth-child(2){
+    background: #000000;
+}
+.language option:nth-child(3){
+    background: #000000;
+}
+.language option:nth-child(4){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.language option:nth-child(5){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.language option:nth-child(6){
+    background: #ffcc00;
+    color: #ff0000;
+}
+.language option:nth-child(7){
+    background: #ffcc00;
+    color: #ff0000;
+}
+/*----------------------------------------------   main   ------------------------------------------------------*/
+main{
+    width: 80%;
+    height: 600px;
+    background: #ff0000;
+    margin: 35px auto 0 auto;
+    box-shadow: 0 0 9px 9px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+/*----------------------------------------   section class="training"   ----------------------------------------*/
+.training{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 4px 4px #ffcc00;
+}
+/*------------------------------------------   div class="question"   -----------------------------------------*/
+.question{
+    width: 80%;
+    height: 60px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*----------------------------------------   div class="container_task"   ------------------------------------*/
+.container_task{
+    width: 80%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
-
-nav ul li {
-    cursor: pointer;
-    transition: color 0.3s;
+/*------------------------------------------   div class="container_task-image"  --------------------------*/
+.container_task-image{
+    width: 45%;
+    height: 90%;
+    box-shadow: 0 0 2px 2px #ffcc00;
 }
-
-nav ul li:hover {
-    color: #000;
-}
-
-.registration {
-    display: flex;
-    gap: 10px;
-}
-
-.registration button {
-    background-color: #000; /* Чорний колір */
-    color: #ff0000; /* Червоний колір тексту */
-    border: none;
-    padding: 15px 30px; /* Збільшені кнопки */
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.registration button:hover {
-    background-color: #ffcc00; /* Золотий колір */
-}
-
-.language {
-    margin-left: 20px;
-    padding: 5px;
-}
-
-/* Стилі для main */
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.training {
-    width: 65%;
-    background-color: #ffcc00; /* Золотий колір */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.training .question {
-    margin-bottom: 20px;
-}
-
-.training .container_image img {
-    width: 40%; /* Зменшуємо розмір картинки */
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#button {
-    display: flex;
-    gap: 15px; /* Збільшуємо відстань між кнопками */
-    justify-content: center; /* Центруємо кнопки */
-}
-
-#button button {
-    background-color: #000; /* Чорний колір */
-    color: #fff;
-    border: none;
-    padding: 15px 30px; /* Збільшені кнопки */
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#button button:hover {
-    background-color: #ffcc00; /* Золотий колір */
-}
-
-/* Стилі для aside */
-aside {
-    width: 30%; /* Збільшуємо ширину aside */
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-aside .task {
+.container_task-image img{
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    background: #ff0000;
+}
+/*------------------------------------------   div id="button"   ----------------------------------------*/
+#button{
+   width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+/*-----------------------------------   button id="button1"   -------------------------------------------*/
+#button1{
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 2px 2px #ffcc00;
+}
+/*-------------------------------------   button id="button2"   ------------------------------------------*/
+#button2{
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 2px 2px #ffcc00;
+}
+/*-------------------------------------    button id="button3"  -------------------------------------------*/
+#button3{
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 2px 2px #ffcc00;
+}
+/*--------------------------------------   button id="button4"   ----------------------------------------*/
+#button4{
+    width: 60%;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 2px 2px #ffcc00;
+}
+/*----------------------------------------    div class="next_task"   ---------------------------------------*/
+.next_task{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+/*-----------------------------------------   button id="previous"   --------------------------------------*/
+#previous{
+    width: 80px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+#previous img{
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+}
+#previous img:hover{
+    transform: scale(1.1);
+}
+/*--------------------------------------------  button id="next"  --------------------------------------------*/
+#next{
+    width: 80px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+#next img{
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+}
+#next img:hover{
+    transform: scale(1.1);
+}
+/*-------------------------------------------   aside    -----------------------------------------------------*/
+aside{
+    width: 30%;
+    height: 500px;
+    box-shadow: 0 0 4px 4px #ffcc00;
+    background-image: url("img/germanyImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------------------  select class="task"   ----------------------------------------------*/
+.task{
+    width: 80%;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 4px 4px #fff;
+}
+.task option:nth-child(1){
+    background: #000000;
+    color: #ffffff;
+}
+.task option:nth-child(2){
+    background: #000000;
+    color: #ffffff;
+}
+.task option:nth-child(3){
+    background: #000000;
+    color: #ffffff;
+}
+.task option:nth-child(4){
+    background: #000000;
+    color: #ffffff;
+}
+.task option:nth-child(5){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.task option:nth-child(6){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.task option:nth-child(7){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.task option:nth-child(8){
+    background: #ff0000;
+    color: #ffcc00;
+}
+.task option:nth-child(9){
+    background: #ffcc00;
+    color: #ff0000;
+}
+.task option:nth-child(10){
+    background: #ffcc00;
+    color: #ff0000;
+}
+.task option:nth-child(11){
+    background: #ffcc00;
+    color: #ff0000;
+}
+.task option:nth-child(12){
+    background: #ffcc00;
+    color: #ff0000;
 }
