@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("flagOfGermany.jpg");
+    background-image: url("img/flagOfGermany.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,7 +251,7 @@ aside{
     width: 30%;
     height: 500px;
     box-shadow: 0 0 4px 4px #ffcc00;
-    background-image: url("germanyImage.jpg");
+    background-image: url("img/germanyImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -314,4 +314,85 @@ aside{
 .task option:nth-child(12){
     background: #ffcc00;
     color: #ff0000;
+}
+/*-------------------------------------------   footer    --------------------------------------------------*/
+footer{
+    width: 80%;
+    height: 250px;
+    margin: 35px auto 15px auto;
+    background: #ffcc00;
+    box-shadow: 0 0 9px 9px #fff;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+/*----------------------------------------   div class="footer_up  -------------------------------------------*/
+.footer_up{
+    width: 100%;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*--------------------------------------    div class="footer_logo  --------------------------------------*/
+.footer_logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 4px #fff;
+}
+/*-----------------------------------   div class="footer_logo" img   ----------------------------------*/
+.footer_logo img{
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------   div class="footer_href"  --------------------------------------*/
+.footer_href{
+    width: 300px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+/*------------------------------------  div class="footer_href"  a   ------------------------------------*/
+.footer_href a{
+    text-decoration: none;
+    color: #ff0000;
+}
+.footer_href a:hover{
+    color: #000000;
+    box-shadow: 0 0 4px 4px #fff;
+}
+/*-----------------------------------   div class="footer_contact"   ---------------------------------------*/
+.footer_contact{
+    width: 300px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+/*-----------------------------------   div class="footer_contact" h3   ----------------------------------*/
+.footer_contact h3{
+    color: #ff0000;
+}
+/*-----------------------------------  div class="footer_contact" a   ------------------------------------*/
+.footer_contact a{
+    text-decoration: none;
+    color: #ff0000;
+}
+.footer_contact a:hover{
+    color: #000000;
+    box-shadow: 0 0 4px 4px #fff;
+}
+/*-----------------------------------------  div class="footer_down"   ---------------------------------*/
+.footer_down{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
